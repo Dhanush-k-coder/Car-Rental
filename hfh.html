@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Testimonials</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .section__container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .section__header {
+            font-size: 28px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .section__description {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* Swiper Styles */
+        .swiper {
+            width: 100%;
+            padding: 20px 0;
+        }
+
+        /* Client Card */
+        .swiper-slide {
+            display: flex;
+            align-items: stretch; /* Ensures equal height */
+        }
+
+        .client__card {
+            background: linear-gradient(135deg, #ffffff, #f9f9f9);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: left;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%; /* Maintain equal height */
+        }
+
+        .client__card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Client Details */
+        .client__details {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+
+        .client__details i {
+            font-size: 30px;
+            background: #007bff;
+            color: #fff;
+            padding: 12px;
+            border-radius: 50%;
+        }
+
+        .client__details h4 {
+            font-size: 18px;
+            margin: 0;
+            color: #222;
+        }
+
+        .client__rating span {
+            color: gold;
+            font-size: 18px;
+        }
+
+        /* Swiper Navigation Buttons */
+        .swiper-button-next, .swiper-button-prev {
+            color: #007bff;
+        }
+
+        /* Pagination Dots */
+        .swiper-pagination-bullet {
+            background: #007bff;
+            opacity: 0.5;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+
+<section class="section__container client__container" id="client">
+    <h2 class="section__header">What People Say About Us?</h2>
+    <p class="section__description">
+        Discover why our customers love renting with us! Read real reviews and
+        testimonials to see how we deliver exceptional service.
+    </p>
+
+    <!-- Swiper Container -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="client__card">
+                    <div class="client__details">
+                        <i class="ri-user-3-fill"></i>
+                        <div>
+                            <h4>Stalin</h4>
+                            <div class="client__rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>☆</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>I had an amazing experience renting a car from this service. The booking process was quick and easy, and the car was in perfect condition.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client__card">
+                    <div class="client__details">
+                        <i class="ri-user-3-fill"></i>
+                        <div>
+                            <h4>Swamy</h4>
+                            <div class="client__rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>☆</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Customer support was excellent! They helped me with all my questions, and I felt confident about my booking. Will rent again.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client__card">
+                    <div class="client__details">
+                        <i class="ri-user-3-fill"></i>
+                        <div>
+                            <h4>Rahul</h4>
+                            <div class="client__rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>☆</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>The flexibility of free cancellations made my trip stress-free. Great service overall!</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client__card">
+                    <div class="client__details">
+                        <i class="ri-user-3-fill"></i>
+                        <div>
+                            <h4>Yogendra</h4>
+                            <div class="client__rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>☆</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Affordable prices and great selection of vehicles! Very happy with my rental.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Pagination and Navigation -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".swiper", {
+            loop: true,
+            slidesPerView: 3, // Show 3 cards at a time
+            spaceBetween: 20,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: { slidesPerView: 1 }, // Mobile: 1 slide
+                768: { slidesPerView: 2 }, // Tablet: 2 slides
+                1024: { slidesPerView: 3 } // Desktop: 3 slides
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
