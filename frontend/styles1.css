@@ -1,0 +1,80 @@
+/* Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url("https://images.piclumen.com/normal/20250323/22/33063ceaf0e44ea6b26b16dd4eecec8c.webp");
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin-right:50%;
+    
+}
+
+/* Container */
+.container {
+    background: hsla(29, 16%, 63%, 0.4);
+    color: #333;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 12px;
+    width: 450px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Fields */
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+/* Two-column Layout */
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.col {
+    width: 70%;
+    gap: 100px;
+}
+
+/* Button */
+button {
+    background: #ff758c;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+button:hover {
+    background: #ff527b;
+}
+
+/* File Upload */
+p {
+    font-size: 12px;
+    color: green;
+    margin-top: 10;
+    background-color: #ddd;
+    
+}
+
+/* Fee Display */
+h3 {
+    background: #ff758c;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+}

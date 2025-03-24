@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Booking</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Book Your Ride 🚗</h2>
+        <form id="bookingForm">
+            <div class="row">
+                <div class="col">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="col">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+            </div>
+
+
+            <label for="rentalType">Rental Type</label>
+            <select id="rentalType" required>
+                <option value="hourly">Hourly</option>
+                <option value="daily">Daily</option>
+            </select>
+            
+            <label for="car">Choose Car</label>
+            <select id="car" required>
+                <option value="" disabled selected>Select Car</option>
+                <option value="sedan" data-hourly="100" data-daily="2000">🚘 Sedan</option>
+                <option value="suv" data-hourly="300" data-daily="3500">🚙 SUV</option>
+                <option value="hatchback" data-hourly="400" data-daily="4000">🚗 Hatchback</option>
+                <option value="luxury" data-hourly="800" data-daily="6000">🚖 Luxury</option>
+            </select>
+            
+            <label for="duration">Rental Duration</label>
+            <input type="number" id="duration" min="1" placeholder="Enter duration" required>
+            
+
+            <div class="row">
+                <div class="col">
+                    <label for="date">Booking Date</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="col">
+                    <label for="time">Pickup Time</label>
+                    <input type="time" id="time" required>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <label for="aadhaar">Upload Aadhaar (PDF, JPG, PNG)</label>
+                    <input type="file" id="aadhaar" accept=".pdf, .jpg, .png" required>
+                    <p id="aadhaar-name"></p>
+                </div>
+                <div class="col">
+                    <label for="license">Upload Driving License (PDF, JPG, PNG)</label>
+                    <input type="file" id="license" accept=".pdf, .jpg, .png" required>
+                    <p id="license-name"></p>
+                </div>
+            </div>
+
+            <h3>Total Fee: ₹<span id="fee">0</span></h3>
+
+            <button type="submit">Book Now</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
